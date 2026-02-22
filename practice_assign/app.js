@@ -3,7 +3,3 @@ var car = {
     model: "Civic",
     year: 2020,
 }
-
-
-
-    
