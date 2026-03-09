@@ -58,3 +58,21 @@
 //     .catch(function(error){
 //         console.log(error)
 //     })
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/albums")        // Fetch API
+//     .then(function (data) {
+//         return data.json()
+//     })
+//     .then(function (data) {
+//         // document.getElementById("api").innerHTML = data[0].title;
+//         for (var i = 0; i < data.length; i++) {
+//             document.getElementById("api").innerHTML += data[i].title + "<br>";
+//             console.log(data[i]);
+            
+//         }
+//     })
+//     .catch(function (error) {
+//         console.log(error)
+//     })
