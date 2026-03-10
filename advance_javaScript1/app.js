@@ -70,7 +70,25 @@
 //         for (var i = 0; i < data.length; i++) {
 //             document.getElementById("api").innerHTML += data[i].title + "<br>";
 //             console.log(data[i]);
-            
+
+//         }
+//     })
+//     .catch(function (error) {
+//         console.log(error)
+//     })
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/photos")        // Fetch API
+//     .then(function (data) {
+//         return data.json()
+//     })
+//     .then(function (data) {
+//         for (var i = 0; i < 5; i++) {
+//             document.getElementById("api").innerHTML += 
+//             `<img src='${data[i].url}'><br>`;
+//             console.log(data[i]);
+
 //         }
 //     })
 //     .catch(function (error) {
