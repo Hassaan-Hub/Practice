@@ -79,14 +79,34 @@
 
 
 
-// fetch("https://jsonplaceholder.typicode.com/photos")        // Fetch API
+// fetch("https://jsonplaceholder.typicode.com/comments")        // Fetch API
+//     .then(function (data) {
+//         return data.json()
+//     })
+//     .then(function (data) {
+//         for (var i = 0; i < data.length; i++) {
+//             document.getElementById("api").innerHTML += 
+//             `${data[i].name}<br>${data[i].email}<br>`;
+//             // console.log(data[i]);
+
+//         }
+//     })
+//     .catch(function (error) {
+//         console.log(error)
+//     })
+
+
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/Todos")        // Fetch API
 //     .then(function (data) {
 //         return data.json()
 //     })
 //     .then(function (data) {
 //         for (var i = 0; i < 5; i++) {
 //             document.getElementById("api").innerHTML += 
-//             `<img src='${data[i].url}'><br>`;
+//             `${data[i].title}<br>`;
 //             console.log(data[i]);
 
 //         }
