@@ -6,22 +6,22 @@
 
 
 
-// function foo(callBack) {                 // call back function
-//     setTimeout(function () {
-//         obj = {
-//             name: "hassaan",
-//             roll: 123,
-//         }
-//         for(var i in obj){
-//         callBack(obj[i])
-//         }
-//     })
-// }
+function foo(callBack) {                 // call back function
+    setTimeout(function () {
+        obj = {
+            name: "hassaan",
+            roll: 123,
+        }
+        for(var i in obj){
+        callBack(obj[i])
+        }
+    }, 1000)
+}
 
-// function abc(data){
-//     console.log(data);
-// }
-// foo(abc)
+function abc(data){
+    console.log(data);
+}
+foo(abc)
 
 
 
