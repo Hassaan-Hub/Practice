@@ -16,6 +16,7 @@ function foo(callBack) {                 // call back function
         callBack(obj[i])
         }
     }, 1000)
+    
 }
 
 function abc(data){
