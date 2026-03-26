@@ -3,26 +3,29 @@
 // }, 1000);
 // console.log("welcome");             // Synchronous code 
 
+// var date = new Date();
+// var time = date.getHours()
+// var minutes = date.getMinutes();
+// var seconds = date.getSeconds();
+// console.log(time + ":" + minutes + ":" + seconds++);
 
 
+// function foo(callBack) {                 // call back function
+//     setTimeout(function () {
+//         obj = {
+//             name: "hassaan",
+//             roll: 123,
+//         }
+//         for(var i in obj){
+//         callBack(obj[i])
+//         }
+//     }, 1000)
+// }
 
-function foo(callBack) {                 // call back function
-    setTimeout(function () {
-        obj = {
-            name: "hassaan",
-            roll: 123,
-        }
-        for(var i in obj){
-        callBack(obj[i])
-        }
-    }, 1000)
-    
-}
-
-function abc(data){
-    console.log(data);
-}
-foo(abc)
+// function abc(data){
+//     console.log(data);
+// }
+// foo(abc)
 
 
 
@@ -115,3 +118,25 @@ foo(abc)
 //     .catch(function (error) {
 //         console.log(error)
 //     })
+
+
+
+setInterval(function(){
+var date = new Date();
+var hour = date.getHours()
+var minutes = date.getMinutes();
+var seconds = date.getSeconds();
+
+if(hour < 10)hour = "0" + hour;
+if(minutes < 10)minutes = "0" + minutes;
+if(seconds < 10)seconds = "0" + seconds;
+if(hour > 12)hour = hour - 12;
+if(hour == 0)hour = 12;
+if(hour >= 12)seconds = seconds + "PM";
+else seconds = seconds + "AM";
+
+var time = hour + ":" + minutes + ":" + seconds
+
+document.getElementById("time").innerText = time;
+
+}, 1000)
