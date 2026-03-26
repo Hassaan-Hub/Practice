@@ -1,46 +1,47 @@
 // The Tasks of some-Array-method:
 // Task 1:
 
-let inp = document.querySelector("input");
+// let inp = document.querySelector("input");
 
-inp.addEventListener("keyup", function () {
-    let val = inp.value.toLowerCase().trim();
-    // 1st name check
-    if (arr[0].toLowerCase().startsWith(val)) {
-        console.log("hassaan matched");
-    }
-    // 2nd name check
-    if (arr[1].toLowerCase().startsWith(val)) {
-        console.log("ali matched");
-    }
-    // 3rd name check
-    if (arr[2].toLowerCase().startsWith(val)) {
-        console.log("sufyan matched");
-    }
-    // 4th name check
-    if (arr[3].toLowerCase().startsWith(val)) {
-        console.log("hasnian matched");
-    }
-});
+// inp.addEventListener("keyup", function () {
+//     let val = inp.value.toLowerCase().trim();
+//     // 1st name check
+//     if (arr[0].toLowerCase().startsWith(val)) {
+//         console.log("hassaan matched");
+//     }
+//     // 2nd name check
+//     if (arr[1].toLowerCase().startsWith(val)) {
+//         console.log("ali matched");
+//     }
+//     // 3rd name check
+//     if (arr[2].toLowerCase().startsWith(val)) {
+//         console.log("sufyan matched");
+//     }
+//     // 4th name check
+//     if (arr[3].toLowerCase().startsWith(val)) {
+//         console.log("hasnian matched");
+//     }
+// });
+
 
 
 //This is  not task just my own practice:
 
-// let user =  +prompt("Type a Number");
-// let num = [1,2,3,4,5,6,7,8,9];
+let user =  +prompt("Type a Number");
+let num = [1,2,3,4,5,6,7,8,9];
 
-// if(user === ""){
-//     alert("write something in a prompt.");
-// }
-// else if(num.some(arr => arr === user)){
-//     alert(`Yes ${user} is availible.`);
-// }
-// else{
-//     alert(`The ${user } is not availible here.`);
-// }
+if(user === ""){
+    alert(`write something in a prompt.`);
+}
+else if(num.some(arr => arr === user)){
+    alert(`Yes ${user} is availible.`);
+}
+else{
+    alert(`The ${user} is not availible here.`);
+}
+
 
 // Task 2:
-
 // let inp2 = document.querySelector("#inp2");
 // let user = [
 //     {name: "ayan", age: 10},
