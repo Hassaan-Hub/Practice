@@ -2,18 +2,26 @@
 // Task 1:
 
 let inp = document.querySelector("input");
-let arr = ["ayan", "ali", "sufyan", "hasnian"];
 
-inp.addEventListener("keyup", function(){
-    let val = inp.value.toLocaleLowerCase().trim();
-    if(arr.some(me => me.toLocaleLowerCase().startsWith(val))){
-        console.log("yes found");
+inp.addEventListener("keyup", function () {
+    let val = inp.value.toLowerCase().trim();
+    // 1st name check
+    if (arr[0].toLowerCase().startsWith(val)) {
+        console.log("hassaan matched");
     }
-    else{
-        console.log("Not Found");
-    }   
+    // 2nd name check
+    if (arr[1].toLowerCase().startsWith(val)) {
+        console.log("ali matched");
     }
-)
+    // 3rd name check
+    if (arr[2].toLowerCase().startsWith(val)) {
+        console.log("sufyan matched");
+    }
+    // 4th name check
+    if (arr[3].toLowerCase().startsWith(val)) {
+        console.log("hasnian matched");
+    }
+});
 
 
 //This is  not task just my own practice:
