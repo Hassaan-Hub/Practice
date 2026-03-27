@@ -100,7 +100,61 @@
 //     })
 
 
+// setInterval(function(){
+    // var date = new Date();
+// var hour = date.getHours()
+// var minutes = date.getMinutes();
+// var seconds = date.getSeconds();
 
+// if(hour < 10)hour = "0" + hour;
+// if(minutes < 10)minutes = "0" + minutes;
+// if(seconds < 10)seconds = "0" + seconds;
+// if(hour > 12)hour = hour - 12;
+// if(hour == 0)hour = 12;
+// if(hour >= 12)seconds = seconds + "PM";
+// else seconds = seconds + "AM";
+
+// var time = hour + ":" + minutes + ":" + seconds
+
+// document.getElementById("time").innerText = time;
+// }, 1000)
+
+
+let data =[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "image": "images.jfif",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "image": "images.jfif",
+    "title": "quis ut nam facilis et officia qui",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "fugiat veniam minus",
+    "completed": false
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "et porro tempora",
+    "completed": true
+  }
+]
+
+
+data.forEach(function(element){
+    document.getElementById("api").innerHTML += 
+    // `${element.title}<br>`;
+    `${element.image}<br>`;
+})
 
 
 // fetch("https://jsonplaceholder.typicode.com/Todos")        // Fetch API
@@ -108,7 +162,7 @@
 //         return data.json()
 //     })
 //     .then(function (data) {
-//         for (var i = 0; i < 5; i++) {
+//         for (var i = 0; i < 1; i++) {
 //             document.getElementById("api").innerHTML += 
 //             `${data[i].title}<br>`;
 //             console.log(data[i]);
@@ -120,23 +174,18 @@
 //     })
 
 
+// fetch("https://jsonplaceholder.typicode.com/Todos")        // Fetch API
+//     .then(function (data) {
+//         return data.json()
+//     })
+//     .then(function (data) {
+//         for (var i = 0; i < 1; i++) {
+//             document.getElementById("api").innerHTML +=  
+//             `${data[i].title}<br>`;
+//             console.log(data[i]);
 
-setInterval(function(){
-var date = new Date();
-var hour = date.getHours()
-var minutes = date.getMinutes();
-var seconds = date.getSeconds();
-
-if(hour < 10)hour = "0" + hour;
-if(minutes < 10)minutes = "0" + minutes;
-if(seconds < 10)seconds = "0" + seconds;
-if(hour > 12)hour = hour - 12;
-if(hour == 0)hour = 12;
-if(hour >= 12)seconds = seconds + "PM";
-else seconds = seconds + "AM";
-
-var time = hour + ":" + minutes + ":" + seconds
-
-document.getElementById("time").innerText = time;
-
-}, 1000)
+//         }
+//     })
+//     .catch(function (error) {
+//         console.log(error)
+//     })
