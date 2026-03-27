@@ -120,41 +120,51 @@
 // }, 1000)
 
 
-let data =[
-  {
-    "userId": 1,
-    "id": 1,
-    "title": "delectus aut autem",
-    "image": "images.jfif",
-    "completed": false
-  },
-  {
-    "userId": 1,
-    "id": 2,
-    "image": "images.jfif",
-    "title": "quis ut nam facilis et officia qui",
-    "completed": false
-  },
-  {
-    "userId": 1,
-    "id": 3,
-    "title": "fugiat veniam minus",
-    "completed": false
-  },
-  {
-    "userId": 1,
-    "id": 4,
-    "title": "et porro tempora",
-    "completed": true
-  }
-]
+// var data = [
+//     {
+//     name: "mira",
+//     model: 2015,
+//     pirse: 25_000_000,
+//     image: "images/BR936951_2bb7d1.jfif"
+//   },
+//   {
+//     name: "corolla grande",
+//     model: 2026,
+//     pirse: 35_000_000,
+//     image: "images/1.8-white-scaled.webp"
+//   },
+//     {
+//     name: "mira",
+//     model: 2015,
+//     pirse: 25_000_000,
+//     image: "images/BR936951_2bb7d1.jfif"
+//   }
+// ]
 
+// var container = document.getElementById("api")
 
-data.forEach(function(element){
-    document.getElementById("api").innerHTML += 
-    // `${element.title}<br>`;
-    `${element.image}<br>`;
-})
+// data.forEach(function(element){
+
+//     var card = document.createElement("div")
+//     var img = document.createElement("img")
+//     var p = document.createElement("p")
+//     p.innerText = `Name: ${element.name} \n Model: ${element.model} \n Pirse: ${element.pirse}`
+//     img.src = element.image
+
+//     card.style.width = "250px";
+//     card.style.height = "300px";
+//     card.style.border = "1px solid black";
+//     card.style.padding = "10px";
+//     card.style.margin = "20px";
+//     card.style.display = "inline-block"
+        
+//     img.style.width = "100%"
+//     img.style.height = "70%"
+
+//     card.appendChild(img)
+//     card.appendChild(p)
+//     container.appendChild(card)
+// })
 
 
 // fetch("https://jsonplaceholder.typicode.com/Todos")        // Fetch API
