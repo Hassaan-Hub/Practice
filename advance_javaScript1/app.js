@@ -10,42 +10,39 @@
 // console.log(time + ":" + minutes + ":" + seconds++);
 
 
-// function foo(callBack) {                 // call back function
-//     setTimeout(function () {
+// function abc(callBack) {                        // call back function
+//     setTimeout(function(){
 //         obj = {
 //             name: "hassaan",
-//             roll: 123,
+//             num: 12345
 //         }
 //         for(var i in obj){
-//         callBack(obj[i])
+//             callBack(obj[i])
 //         }
 //     }, 1000)
 // }
 
-// function abc(data){
+// function foo(data){
 //     console.log(data);
 // }
-// foo(abc)
+// abc(foo)
 
 
 
-// function abc(){
-//     return new Promise(function(resolve, reject){        //  Promise Function
-//         setInterval(function(){
-//             obj = {
-//                 name: "hassaan",
-//                 roll: 123,
-//             }
-//             resolve(obj)
-//         }, 2000);
-//     })
+// function prom(){
+//     return new Promise(function(resolve, rejact){                // Promise Function
+//         obj = {
+//             name: "hassaan",
+//             num: 12345
+//         }
+//         resolve(obj)
+//     }, 1000)
 // }
-
-// abc()
-// .then(function(data){
+// prom()
+// .then( function(data) {
 //     console.log(data);
 // })
-// .catch(function(error){
+// .catch( function(error) {
 //     console.log(error);
 // })
 
