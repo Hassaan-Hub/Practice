@@ -10,6 +10,7 @@ function saveItem() {
 
 
 function renderTodo(){
+   
     container.innerText = "";
 
     todos.forEach((todo, index) => {
