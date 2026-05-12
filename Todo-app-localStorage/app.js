@@ -4,13 +4,15 @@ let container = document.getElementById("container");
 
 let todos = JSON.parse(localStorage.getItem("todo")) || [];
 
+let editIndex = null;
+
 function saveItem() {
     localStorage.setItem("todo", JSON.stringify(todos));
 }
 
 
-function renderTodo(){
-   
+function renderTodo() {
+
     container.innerText = "";
 
     todos.forEach((todo, index) => {
@@ -27,33 +29,37 @@ function renderTodo(){
         li.appendChild(ediBtn)
         ul.appendChild(li)
         container.appendChild(ul)
-        
-        delBtn.addEventListener("click", ()=>{
+
+        delBtn.addEventListener("click", () => {
             todos.splice(index, 1);
             renderTodo();
             saveItem()
         })
 
-        ediBtn.addEventListener("click", ()=> {
-            let newText = prompt("Enter new text", todo)
-
-            if(newText !== null && newText.trim() !== ""){
-                todos[index] = newText;
-                saveItem()
-                renderTodo()
-            }
+        ediBtn.addEventListener("click", () => {
+            input.value = todo;
+            editIndex = index;
+            addBtn.innerText = "Update";
         })
+        addBtn.innerText = "Add";
     });
 }
 
+renderTodo()
 
 
-addBtn.addEventListener("click", ()=>{
+addBtn.addEventListener("click", () => {
     let value = input.value.trim()
-    
-    if(value === "") return;
 
-    todos.push(value);
+    if (value === "") return;
+
+    if (editIndex !== null) {
+        todos[editIndex] = value;
+        editIndex = null;
+    } else {
+        todos.push(value)
+    }
+
     saveItem()
     renderTodo()
 

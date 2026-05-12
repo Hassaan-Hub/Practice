@@ -2,10 +2,10 @@ let inp = document.getElementById("input");
 let btn = document.getElementById("result");
 let con = document.getElementById("container");
 
-// let myTodo = JSON.parse(localStorage.getItem("mytodo")) || []
-// myTodo.push("hassaan");
-// localStorage.setItem("myTodo", JSON.stringify(myTodo));
-// console.log(myTodo);
+let myTodo = JSON.parse(localStorage.setItem("mytodo")) || []
+myTodo.push("hassaan");
+localStorage.getItem("myTodo", JSON.stringify(myTodo));
+console.log(myTodo);
 
 // let saveItem = () => {
 // }
