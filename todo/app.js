@@ -1,55 +1,68 @@
-let inp = document.getElementById("input");
-let btn = document.getElementById("result");
-let con = document.getElementById("container");
+// let inp = document.getElementById("input");
+// let btn = document.getElementById("result");
+// let con = document.getElementById("container");
 
-let myTodo = JSON.parse(localStorage.setItem("mytodo")) || []
-myTodo.push("hassaan");
-localStorage.getItem("myTodo", JSON.stringify(myTodo));
-console.log(myTodo);
+// let myTodos = JSON.parse(localStorage.getItem("Todo")) || []
+
+// let editIndex = null;
 
 // let saveItem = () => {
+//     localStorage.setItem("Todo", JSON.stringify(myTodos));
 // }
 
 // let renderTodo = () => {
 //     con.innerText = "";
 
 //     myTodos.forEach((todo, index) => {
-//         console.log(todo);
-        
-// //         let main = document.createElement("div");
-// //         let para = document.createElement("p");
-// //         let btn1 = document.createElement("button");
-// //         let btn2 = document.createElement("button");
 
-// //         para.innerText = todo;
-// //         console.log(para);
+//         let ul = document.createElement("ul");
+//         let li = document.createElement("li");
+//         let btn1 = document.createElement("button");
+//         let btn2 = document.createElement("button");
 
-// //         btn1.innerText = "Delete";
-// //         btn2.innerText = "Edit";
+//         li.innerText = todo;
+//         btn1.innerText = "Delete";
+//         btn2.innerText = "Edit";
 
-// //         para.appendChild(btn1);
-// //         para.appendChild(btn2);
-// //         main.appendChild(para);
-// //         con.appendChild(main);
+//         li.appendChild(btn1);
+//         li.appendChild(btn2);
+//         ul.appendChild(li);
+//         con.appendChild(ul);
 
-// //         inp.value = "";
+//         inp.value = "";
 
-// //         delBtn.addEventListener("click", () => {
-// //             event.target.parentNode.parentNode.remove()
-// //         })
+//         btn1.addEventListener("click", () => {
+//             myTodos.splice(index, 1)
+//             saveItem();
+//             renderTodo();
+//         })
 
-// //         ediBtn.addEventListener("click", (e) => {
-// //             let p = e.target.parentNode;
-// //             let oldTe = p.firstChild.nodeValue;
-
-// //             let newText = prompt("Enter your new Value", oldTe);
-            
-// //             if (newText !== "" && newText !== null) {
-// //                 p.firstChild.nodeValue = newText;
-// //             }
-// //         })
-    
-// });
+//         btn2.addEventListener("click", () => {
+//             inp.value = todo;
+//             editIndex = index;
+//             btn.innerText = "Updated";
+//         })
+//         btn.innerText = "Add";
+//     });
 
 // };
 
+
+
+// btn.addEventListener("click", () => {
+//     let value = inp.value.trim()
+
+//     if (value === "") return;
+
+//     if (editIndex !== null) {
+//         myTodos[editIndex] = value;
+//         editIndex = null;
+//     } else {
+//         myTodos.push(value);
+//     }
+
+//     saveItem()
+//     renderTodo()
+
+//     inp.value = "";
+// })
