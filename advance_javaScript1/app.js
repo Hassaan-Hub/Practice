@@ -184,7 +184,7 @@
 // fetch("https://jsonplaceholder.typicode.com/Todos")        // Fetch API
 //     .then(function (data) {
 //
-        //  return data.json()
+//  return data.json()
 //     })
 //     .then(function (data) {
 //         for (var i = 0; i < 1; i++) {
