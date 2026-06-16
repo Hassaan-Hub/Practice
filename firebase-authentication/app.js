@@ -55,8 +55,9 @@ loginBtn.addEventListener("click", () => {
 
 
 
+const information = document.getElementById('information');
 
-
+information.addEventListener('click',()=>{
 onAuthStateChanged(auth, (user) => {
     if (user) {
         console.log("User is logged in");
@@ -73,6 +74,7 @@ onAuthStateChanged(auth, (user) => {
         console.log('No user login');
     }
 });
+})
 
 
 
