@@ -17,7 +17,6 @@ const signup = async (req, res) => {
     res.status(201).json({
         status: 201,
         message: "user Created successfully",
-        user
     })
 }
 
