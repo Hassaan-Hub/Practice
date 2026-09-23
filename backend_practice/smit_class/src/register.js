@@ -1,6 +1,6 @@
 const express = require('express');
-const signup = require('./controllers/signup.post.controller');
-const login = require('./controllers/login.post.controller');
+const signup = require('./controllers/auth.controller/signup.post.controller');
+const login = require('./controllers/auth.controller/login.post.controller');
 
 const register = express();
 register.use(express.json());
